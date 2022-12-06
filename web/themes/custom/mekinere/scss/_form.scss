@@ -1,0 +1,83 @@
+@import 'psd_values';
+
+
+#block-contactblock {
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(29, 29, 29);
+        line-height: 2.8;
+    }
+    #contact-message-contact-me-form {
+        width: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        #edit-mail {
+            position: relative;
+            width: 50%;
+            left: 0px;
+            top: 0px;
+        }
+        #edit-name {
+            position: relative;
+            width: 50%;
+            right: 0px;
+            top: 0px;
+        }
+        #edit-subject-wrapper {
+            width: 100%;
+        }
+        #edit-message-wrapper {
+            width: 100%;
+        }
+        .form-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button--primary {
+            background-color: $rareColor;
+            align-self: center;
+            justify-self: center;
+        }
+        .form-required {
+            opacity: 0;
+            position: fixed;
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+
+    .form-desc {
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(29, 29, 29);
+        line-height: 2.8;
+    }
+
+    .form-placeholders {
+        font-size: 15px;
+        font-family: "Nunito Sans";
+        color: rgb(120, 120, 120);
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}

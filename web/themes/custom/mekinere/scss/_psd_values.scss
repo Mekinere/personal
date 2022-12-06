@@ -1,0 +1,49 @@
+$nativeWidth: 1366px;
+
+$navHeight: 90px;
+$navBack: none;
+$bannerHeight: 670px;
+$buttonHeight: 54px;
+$buttonWidth: 180px;
+
+$aboutHeight: 420px;
+$numberHeight: 240px;
+$galleryHeight: 600px;
+$thumbHeight: .5 * $galleryHeight;
+$thumbWidth: .25 * $nativeWidth;
+$moreHeight: 100px;
+$serviceHeight: 540px;
+$formHeight: 750px;
+$fontFamily: "Monteserrat", "Nunito Sans", "Pe", sans-serif;
+
+$rareColor: #c97110;
+
+$rareColorDark:#e1ba85;
+
+$colorTriad: #BA85E1;
+
+.region-content {
+    padding: 0 0px;
+}
+.service-icons {    
+    font-size: 48px;
+    color: rgb(101, 101, 101);
+    line-height: 0.625;
+}
+
+.service-headers {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(25, 25, 25);
+    text-transform: uppercase;
+    line-height: 2.5;
+}
+
+.service-desc {
+    font-size: 16px;
+    font-family: "Nunito Sans";
+    color: rgb(120, 120, 120);
+    line-height: 1.5;
+}
+
+

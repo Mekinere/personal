@@ -1,0 +1,10 @@
+.dark-stop-1 {
+    stop-color: #930d8c;
+}
+.dark-stop-2 {
+    stop-color: #ba85e1;
+}
+.stop-1, .stop-2, .dark-stop-1, .dark-stop-2 {
+    transition: stop-color 1s;
+}
+

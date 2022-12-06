@@ -1,0 +1,96 @@
+@import 'psd_values';
+
+
+#block-numbersstats .field--name-field-paragraphs, #block-skillsblock .field--name-field-paragraphs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    .field__item  {
+        height: $numberHeight;
+        width: 100%;
+        background-color: $rareColor;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+
+        .paragraph--type--stats {
+        height: $numberHeight;
+        background: none;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+            .field--type-fontawesome-icon {
+                background: none;
+                height: min-content;
+                width: min-content;
+                justify-self: center;
+                align-self: center;
+                font-size: 48px;
+                color: rgb(255, 255, 255);
+                line-height: 0.625;
+            }
+
+            .field--name-field-text .paragraph--type--stat-text {
+                display: flex;
+                margin-left: 20px;
+                margin-top: 10px;
+                flex-direction: column;
+                align-self: center;
+                justify-self: flex-start;
+                height: min-content;
+                width: auto;
+                align-content: flex-start;
+                justify-content: flex-start;
+
+                .field--name-field-number {
+
+                    background: none;
+
+                    height: min-content;
+                    width: min-content;
+                    text-justify: left;
+                    font-size: 18px;
+                    font-family: "Montserrat";
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                    line-height: 1.667;
+                }
+          
+                .field--name-field-desc {
+                    background: none;
+                    height: min-content;
+                    max-width: 100%;
+                    text-justify: left;
+                    font-size: 12px;
+                    font-family: "Montserrat";
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                    line-height: 2.5;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                .field--name-field-text .paragraph--type--stat-text {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    
+    @media screen and (max-width: 992px) {
+
+    }
+
+    @media screen and (max-width: 500px) {
+        .field--name-field-text .paragraph--type--stat-text {
+            margin-left: 10px;
+        }
+    }
+}

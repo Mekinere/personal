@@ -1,0 +1,56 @@
+@import 'psd_values';
+
+#block-itstheaboutmebaby {
+    height: $aboutHeight;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // justify-content: center;
+
+    .field--name-field-paragraphs .field__item .paragraph--type--about {
+        height: $aboutHeight;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        .field--name-field-photo {
+            width: max-content;
+            margin: auto;
+
+            .img-fluid {
+                height: 200px;
+                width: auto;
+            }
+        }
+        .field--name-field-header {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            line-height: 2;
+            color: rgb(25, 25, 25);
+            font-weight: 600;
+        }
+
+        .field--name-field-desc {
+            width: 50%;
+            margin: auto;
+            font-size: 16px;
+            font-family: "Nunito Sans";
+            text-align: center;
+            line-height: 1.5;
+            color: rgb(120, 120, 120);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}
