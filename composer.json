@@ -27,7 +27,9 @@
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
+        "drupal/static_suite": "^1.1@alpha",
         "drupal/token": "^1.11",
+        "drupal/tome": "^1.7",
         "drush/drush": "^11.3"
     },
     "conflict": {

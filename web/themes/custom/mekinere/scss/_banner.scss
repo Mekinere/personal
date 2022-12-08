@@ -35,6 +35,7 @@
         font-family: "Montserrat";
         color: rgb(29, 29, 29);
         line-height: 1.263;
+        padding: 10px;
         // spacing 10
     }
     
@@ -43,6 +44,7 @@
         right: 0px;
         top: 280px;
         width: 50%;
+        padding: 10px;
 
         font-size: 18px;
         font-family: "Nunito Sans";
@@ -95,12 +97,23 @@
     @media screen and (max-width: 500px) {
         .field--name-field-header {
             width: 90%;
+            top: 150px;
+            right: 5%;
+            left: 5%;
+            // text-align: center;
+
         }
         .field--name-field-desc {
             width: 90%;
+            right: 5%;
+            left: 5%;
+            // text-align: center;
+
         }
         .field--name-field-button {
-            left: 10%;
+            left: 25%;
+            bottom: 100px;
+
         }
     }
 }

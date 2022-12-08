@@ -171,6 +171,8 @@ jQuery(document).ready(function($){
             height: "0%",
         }, 300, "swing", function() {
             $(this).find(".field--name-title").css("z-index", "-1");
+            $(this).css("overflow", "hidden");
+
         });
 
         if (window.matchMedia('(max-width: 500px)').matches) {
@@ -232,6 +234,11 @@ jQuery(document).ready(function($){
 
     $collapse = $(".field--name-field-collapse");
     $galleryWidth = 100/3;
+    
+    $projectOverflow = 1;
+    $gallery = $(".field--name-field-project");
+    $moreProject = $(".field--name-field-project .field__item:nth-child(n + 7)");
+
 
     // gallery collapse button
     $collapse.click(function() { 
@@ -244,6 +251,20 @@ jQuery(document).ready(function($){
         else if (window.matchMedia('(min-width: 993px)').matches) {
             $galleryWidth = 100/3;
         }
+
+        if (window.matchMedia('(max-width: 500px)').matches) {
+            $projectOverflow = 7;
+            $moreProject = $(".field--name-field-project .field__item:nth-child(n + 3)");
+        }
+        else if (window.matchMedia('(max-width: 992px)').matches) {
+            $projectOverflow = 3;
+            $moreProject = $(".field--name-field-project .field__item:nth-child(n + 5)");
+        }
+        else if (window.matchMedia('(min-width: 993px)').matches) {
+            $projectOverflow = 1;
+            $moreProject = $(".field--name-field-project .field__item:nth-child(n + 7)");
+        }
+
 
 
         var $project = $(this).closest(".node--type-project");
@@ -276,6 +297,7 @@ jQuery(document).ready(function($){
             height: "300px",
         }, 500, "swing", function() {
             $(this).find(".field--name-title").css("z-index", "2");
+            $(this).css("overflow", "");
             $(this).css("width", "");
             $hoverIcon.css("z-index", "5");
             $more.css("pointer-events", "auto");
@@ -301,10 +323,6 @@ jQuery(document).ready(function($){
 
 
     });
-
-    $projectOverflow = 1;
-    $gallery = $(".field--name-field-project");
-    $moreProject = $(".field--name-field-project .field__item:nth-child(n + 7)");
 
     // load more button
     $more.click(function() {

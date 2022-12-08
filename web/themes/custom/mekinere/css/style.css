@@ -13191,8 +13191,25 @@ code {
   overflow-y: auto;
 }
 
-.region-content {
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {
@@ -13232,8 +13249,8 @@ header {
   top: 80px;
   z-index: 10;
   background: rgba(159, 159, 159, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .region-nav-main {
@@ -13305,8 +13322,8 @@ header {
     width: 100%;
     height: 160px;
     background: rgba(159, 159, 159, 0.5);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
   #navbarSupportedContent .region {
     position: absolute;
@@ -13317,8 +13334,30 @@ header {
     right: 0px;
   }
 }
-.region-content {
+@media screen and (max-width: 500px) {
+  .navbar, #navbarSupportedContent {
+    background: rgba(159, 159, 159, 0.8);
+  }
+}
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {
@@ -13374,12 +13413,14 @@ header {
   font-family: "Montserrat";
   color: rgb(29, 29, 29);
   line-height: 1.263;
+  padding: 10px;
 }
 #block-thetopbanner .field--name-field-paragraphs .field__item .paragraph--type--banner .field--name-field-desc {
   position: absolute;
   right: 0px;
   top: 280px;
   width: 50%;
+  padding: 10px;
   font-size: 18px;
   font-family: "Nunito Sans";
   color: rgb(120, 120, 120);
@@ -13425,17 +13466,40 @@ header {
 @media screen and (max-width: 500px) {
   #block-thetopbanner .field--name-field-paragraphs .field__item .paragraph--type--banner .field--name-field-header {
     width: 90%;
+    top: 150px;
+    right: 5%;
+    left: 5%;
   }
   #block-thetopbanner .field--name-field-paragraphs .field__item .paragraph--type--banner .field--name-field-desc {
     width: 90%;
+    right: 5%;
+    left: 5%;
   }
   #block-thetopbanner .field--name-field-paragraphs .field__item .paragraph--type--banner .field--name-field-button {
-    left: 10%;
+    left: 25%;
+    bottom: 100px;
   }
 }
 
-.region-content {
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {
@@ -13460,10 +13524,11 @@ header {
 }
 
 #block-itstheaboutmebaby {
-  height: 420px;
+  height: 520px;
 }
 #block-itstheaboutmebaby .field--name-field-paragraphs .field__item .paragraph--type--about {
-  height: 420px;
+  height: 520px;
+  padding-top: 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13501,15 +13566,49 @@ header {
 #block-itstheaboutmebaby .field--name-field-paragraphs .field__item .paragraph--type--about .field--name-field-desc {
   width: 50%;
   margin: auto;
+  padding: 20px;
   font-size: 16px;
   font-family: "Nunito Sans";
   text-align: center;
   line-height: 1.5;
   color: rgb(120, 120, 120);
 }
+@media screen and (max-width: 992px) {
+  #block-itstheaboutmebaby .field--name-field-paragraphs .field__item .paragraph--type--about .field--name-field-desc {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #block-itstheaboutmebaby .field--name-field-paragraphs .field__item .paragraph--type--about .field--name-field-desc {
+    width: 90%;
+    margin: auto;
+  }
+  #block-itstheaboutmebaby .field--name-field-paragraphs .field__item .paragraph--type--about .field--name-field-header {
+    width: 75%;
+    margin: auto;
+  }
+}
 
-.region-content {
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {
@@ -13658,8 +13757,25 @@ header {
   }
 }
 
-.region-content {
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {
@@ -13811,7 +13927,9 @@ header {
   justify-content: flex-start;
 }
 #block-projectgallery .field--name-field-project .node--type-project .node__content .field--name-field-desc .field--name-field-description {
-  height: 100px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   width: 100%;
 }
 #block-projectgallery .field--name-field-project .node--type-project .node__content .field--name-field-desc .field--name-field-description p {
@@ -13926,8 +14044,25 @@ header {
   line-height: 1.2;
 }
 
-.region-content {
+.region-content, .region-footer {
   padding: 0 0px;
+}
+
+footer, #block-myfooter {
+  padding: 0px;
+  height: 88px;
+}
+footer .paragraph--type--about, #block-myfooter .paragraph--type--about {
+  height: 88px;
+  width: 100%;
+}
+footer .paragraph--type--about .field--name-field-header, #block-myfooter .paragraph--type--about .field--name-field-header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: "Montserrat";
+  line-height: 2;
+  color: rgb(25, 25, 25);
 }
 
 .service-icons {

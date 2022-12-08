@@ -6,7 +6,7 @@ $bannerHeight: 670px;
 $buttonHeight: 54px;
 $buttonWidth: 180px;
 
-$aboutHeight: 420px;
+$aboutHeight: 520px;
 $numberHeight: 240px;
 $galleryHeight: 600px;
 $thumbHeight: .5 * $galleryHeight;
@@ -22,8 +22,25 @@ $rareColorDark:#e1ba85;
 
 $colorTriad: #BA85E1;
 
-.region-content {
+.region-content, .region-footer {
     padding: 0 0px;
+}
+footer, #block-myfooter {
+    padding: 0px;
+    height: 88px;
+    .paragraph--type--about {
+        height: 88px;
+        width: 100%;
+        .field--name-field-header {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            
+            font-family: "Montserrat";
+            line-height: 2;
+            color: rgb(25, 25, 25);
+        }
+    }
 }
 .service-icons {    
     font-size: 48px;
