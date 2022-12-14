@@ -2,28 +2,31 @@
 
 
 #block-numbersstats .field--name-field-paragraphs, #block-skillsblock .field--name-field-paragraphs {
+    height: $numberHeight;
+    background-color: $rareColor;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     width: 100%;
     .field__item  {
-        height: $numberHeight;
-        width: 100%;
+        height: min-content;
+        width: min-content;
         background-color: $rareColor;
         display: flex;
         justify-content: space-around;
-        align-content: center;
+        align-items: flex-start;
         flex-direction: row;
 
         .paragraph--type--stats {
-        height: $numberHeight;
+        height: 120px;        
         background: none;
         position: relative;
-        display: flex;
+        display: flex;  
         flex-direction: row;
         justify-content: center;
-        align-content: center;
+        align-items: center;
 
             .field--type-fontawesome-icon {
                 background: none;
@@ -84,13 +87,39 @@
     }
 
     
-    @media screen and (max-width: 992px) {
 
+}
+
+@media screen and (min-width: 993px) {
+    #block-skillsblock .field--name-field-paragraphs {
+        flex-wrap: nowrap;
+        & > .field__item {
+            width: calc(100%/6);
+        }
     }
 
-    @media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 992px) {
+    #block-skillsblock .field--name-field-paragraphs {
+        & > .field__item {
+            min-width: calc(100%/3);
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    #block-numbersstats .field--name-field-paragraphs {
         .field--name-field-text .paragraph--type--stat-text {
             margin-left: 10px;
         }
     }
+    #block-skillsblock .field--name-field-paragraphs {
+        & > .field__item {
+            min-width: calc(100%/3);
+        }
+    }
+
 }

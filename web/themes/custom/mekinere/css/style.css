@@ -13264,7 +13264,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #c97110;
   font-family: "Montserrat";
@@ -13633,38 +13633,47 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
 }
 
 #block-numbersstats .field--name-field-paragraphs, #block-skillsblock .field--name-field-paragraphs {
+  height: 240px;
+  background-color: #c97110;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 #block-numbersstats .field--name-field-paragraphs .field__item, #block-skillsblock .field--name-field-paragraphs .field__item {
-  height: 240px;
-  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   background-color: #c97110;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 #block-numbersstats .field--name-field-paragraphs .field__item .paragraph--type--stats, #block-skillsblock .field--name-field-paragraphs .field__item .paragraph--type--stats {
-  height: 240px;
+  height: 120px;
   background: none;
   position: relative;
   display: -webkit-box;
@@ -13677,8 +13686,9 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 #block-numbersstats .field--name-field-paragraphs .field__item .paragraph--type--stats .field--type-fontawesome-icon, #block-skillsblock .field--name-field-paragraphs .field__item .paragraph--type--stats .field--type-fontawesome-icon {
   background: none;
@@ -13751,12 +13761,29 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 500px) {
-  #block-numbersstats .field--name-field-paragraphs .field--name-field-text .paragraph--type--stat-text, #block-skillsblock .field--name-field-paragraphs .field--name-field-text .paragraph--type--stat-text {
-    margin-left: 10px;
+
+@media screen and (min-width: 993px) {
+  #block-skillsblock .field--name-field-paragraphs {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  #block-skillsblock .field--name-field-paragraphs > .field__item {
+    width: 16.6666666667%;
   }
 }
-
+@media screen and (max-width: 992px) {
+  #block-skillsblock .field--name-field-paragraphs > .field__item {
+    min-width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #block-numbersstats .field--name-field-paragraphs .field--name-field-text .paragraph--type--stat-text {
+    margin-left: 10px;
+  }
+  #block-skillsblock .field--name-field-paragraphs > .field__item {
+    min-width: 33.3333333333%;
+  }
+}
 .region-content, .region-footer {
   padding: 0 0px;
 }
@@ -14118,6 +14145,9 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -14125,22 +14155,22 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-#block-contactblock #contact-message-contact-me-form #edit-mail {
+#block-contactblock #contact-message-contact-me-form > div:nth-of-type(1) {
   position: relative;
   width: 50%;
   left: 0px;
   top: 0px;
 }
-#block-contactblock #contact-message-contact-me-form #edit-name {
+#block-contactblock #contact-message-contact-me-form > div:nth-of-type(2) {
   position: relative;
   width: 50%;
   right: 0px;
   top: 0px;
 }
-#block-contactblock #contact-message-contact-me-form #edit-subject-wrapper {
+#block-contactblock #contact-message-contact-me-form > div:nth-of-type(3) {
   width: 100%;
 }
-#block-contactblock #contact-message-contact-me-form #edit-message-wrapper {
+#block-contactblock #contact-message-contact-me-form > div:nth-of-type(5) {
   width: 100%;
 }
 #block-contactblock #contact-message-contact-me-form .form-actions {
@@ -14160,12 +14190,6 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
   align-self: center;
   justify-self: center;
 }
-#block-contactblock #contact-message-contact-me-form .form-required {
-  opacity: 0;
-  position: fixed;
-  z-index: -1;
-  pointer-events: none;
-}
 #block-contactblock .form-desc {
   font-size: 30px;
   font-family: "Montserrat";
@@ -14179,6 +14203,16 @@ footer .paragraph--type--about .field--name-field-header, #block-myfooter .parag
   line-height: 1.6;
 }
 
+@media screen and (max-width: 992px) {
+  #block-contactblock #contact-message-contact-me-form {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #block-contactblock #contact-message-contact-me-form {
+    width: 90%;
+  }
+}
 .dark-stop-1 {
   stop-color: #930d8c;
 }
